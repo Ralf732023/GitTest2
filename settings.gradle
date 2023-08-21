@@ -1,0 +1,10 @@
+rootProject.name = 'GradleTest2'
+include 'db'
+include 'db:api'
+findProject(':db:api')?.name = 'api'
+include 'db'
+include 'api'
+include 'service'
+
+
+
